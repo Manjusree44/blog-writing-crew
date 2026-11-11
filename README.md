@@ -107,3 +107,4 @@ This project is an exploration of:
 - Add more control over blog tone and writing style.
 - Improve the user interface.
 - Add options for different blog formats.
+
