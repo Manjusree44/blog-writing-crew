@@ -2,8 +2,8 @@ from blog_writing_crew.crew import BlogWritingCrew
 import streamlit as st
 
 
-st.title("Enter your blog title like whatever u want ")
-blog_title = st.text_input("Pls enter")
+st.title("Enter your blog title of the topic you like ")
+blog_title = st.text_input("Enter below")
 
 
 if st.button("Generate blog"):
@@ -14,7 +14,7 @@ if st.button("Generate blog"):
           "topic" : blog_title,
           "current_year": "2026"
                    }
-        with st.spinner("your ai agents are working"):
+        with st.spinner("Ai agents to your work"):
              result = BlogWritingCrew().crew().kickoff(inputs=inputs)
         st.success("Blog generated !")
         st.divider()
