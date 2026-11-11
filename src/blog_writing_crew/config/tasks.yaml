@@ -1,0 +1,69 @@
+
+research_task:
+  description: >
+    Research the topic: {topic}.
+
+    Identify the 5 most important aspects of the topic.
+    Find useful facts, examples, applications, benefits and challenges.
+    Avoid unnecessary background information and repetitive points.
+    Organize the research using clear headings and bullet points.
+
+  expected_output: >
+    A concise research summary containing:
+    - Topic overview
+    - 5 important findings
+    - Relevant examples
+    - Benefits and challenges
+
+  agent: researcher
+
+
+writing_task:
+  description: >
+    Using the research provided, write an informative and engaging blog
+    about {topic}.
+
+    Follow these formatting rules:
+    1. Start with an interesting title.
+    2. Write a short introduction of 2-3 sentences.
+    3. Include a quick overview of the topic.
+    4. Divide the article into 4-5 meaningful sections.
+    5. Use short paragraphs of 2-4 sentences.
+    6. Use bullet points for lists and important information.
+    7. Highlight important terms using bold formatting.
+    8. Include practical examples where relevant.
+    9. Finish with 3 key takeaways and a short conclusion.
+
+    Keep the complete article between 500 and 700 words.
+    Avoid repetition, unnecessary technical jargon and ASCII diagrams.
+    Do not invent statistics or unsupported facts.
+    Make the article easy for a general reader to understand.
+
+  expected_output: >
+    A readable Markdown blog containing:
+    - Catchy title
+    - Short introduction
+    - 4-5 organized sections
+    - Bullet points and examples
+    - Key takeaways
+    - Conclusion
+
+  agent: writer
+
+
+editing_task:
+  description: >
+    Review the blog written by the writer.
+
+    Improve clarity, grammar, readability and flow.
+    Remove repetitive sentences and unnecessary explanations.
+    Ensure the article follows the requested structure and word limit.
+    Preserve important facts and technical accuracy.
+    Do not add unsupported claims.
+
+  expected_output: >
+    A polished Markdown blog of approximately 500-700 words,
+    with clear headings, short paragraphs, bullet points,
+    key takeaways and a concise conclusion.
+
+  agent: editor
